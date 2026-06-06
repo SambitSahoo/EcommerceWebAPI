@@ -2,14 +2,13 @@ name: Ecommerce API CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
-
     steps:
       # Checkout code
       - name: Checkout repository
@@ -29,6 +28,6 @@ jobs:
       - name: Build
         run: dotnet build Ecommerce.sln --no-restore --configuration Release
 
-      # Run tests (if you have test projects)
+      # Run tests
       - name: Test
         run: dotnet test Ecommerce.sln --no-build --verbosity normal

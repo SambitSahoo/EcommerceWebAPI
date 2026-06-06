@@ -1,16 +1,27 @@
-# Ignore Angular client project (already deleted, but just in case)
-CLIENT/
-
 # Build results
 bin/
 obj/
 publish/
 
-# User-specific files
-*.log
+# Visual Studio files
 *.user
 *.suo
 *.vs/
+.vscode/
 
-# Dependency files
-deps.txt
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Docker
+docker-compose/*.dockerignore
+
+# Node / Angular (if ever re-added)
+CLIENT/
+node_modules/
+
+# Backup & temp files
+*.bak
+*.tmp

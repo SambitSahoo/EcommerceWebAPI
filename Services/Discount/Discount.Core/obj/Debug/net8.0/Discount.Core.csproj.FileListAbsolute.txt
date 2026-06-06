@@ -1,0 +1,11 @@
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/bin/Debug/net8.0/Discount.Core.deps.json
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/bin/Debug/net8.0/Discount.Core.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/bin/Debug/net8.0/Discount.Core.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.AssemblyInfoInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.AssemblyInfo.cs
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.csproj.CoreCompileInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/refint/Discount.Core.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/Discount.Core.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Discount/Discount.Core/obj/Debug/net8.0/ref/Discount.Core.dll

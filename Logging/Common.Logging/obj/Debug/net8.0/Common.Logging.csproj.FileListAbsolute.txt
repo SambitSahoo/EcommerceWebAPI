@@ -1,0 +1,12 @@
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/bin/Debug/net8.0/Common.Logging.deps.json
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/bin/Debug/net8.0/Common.Logging.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/bin/Debug/net8.0/Common.Logging.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.csproj.AssemblyReference.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.AssemblyInfoInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.AssemblyInfo.cs
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.csproj.CoreCompileInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/refint/Common.Logging.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/Common.Logging.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Logging/Common.Logging/obj/Debug/net8.0/ref/Common.Logging.dll

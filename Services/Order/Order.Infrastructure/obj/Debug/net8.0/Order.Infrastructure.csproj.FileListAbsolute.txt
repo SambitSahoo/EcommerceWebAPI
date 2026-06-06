@@ -1,0 +1,14 @@
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/bin/Debug/net8.0/Order.Infrastructure.deps.json
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/bin/Debug/net8.0/Order.Infrastructure.runtimeconfig.json
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/bin/Debug/net8.0/Order.Infrastructure.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/bin/Debug/net8.0/Order.Infrastructure.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.csproj.AssemblyReference.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.AssemblyInfoInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.AssemblyInfo.cs
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/refint/Order.Infrastructure.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/Order.Infrastructure.genruntimeconfig.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/Services/Order/Order.Infrastructure/obj/Debug/net8.0/ref/Order.Infrastructure.dll

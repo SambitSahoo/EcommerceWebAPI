@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+    "Name": "Shoes"
+  },
+  {
+    "Id": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d",
+    "Name": "Football"
+  },
+  {
+    "Id": "f3e4d5c6-b7a8-9c0d-1e2f-3a4b5c6d7e8f",
+    "Name": "Rackets"
+  },
+  {
+    "Id": "b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+    "Name": " Kit Bags"
+  },
+  {
+    "Id": "c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+    "Name": "Accessories"
+  },
+  {
+    "Id": "e6f7a8b9-c0d1-2e3f-4a5b-6c7d8e9f0a1b",
+    "Name": "Shuttlecocks"
+  },
+  {
+    "Id": "f7a8b9c0-d1e2-3f4a-5b6c-7d8e9f0a1b2c",
+    "Name": "Strings"
+  },
+  {
+    "Id": "a8b9c0d1-e2f3-4a5b-6c7d-8e9f0a1b2c3d",
+    "Name": "Grips"
+  },
+  {
+    "Id": "b9c0d1e2-f3a4-5b6c-7d8e-9f0a1b2c3d4e",
+    "Name": "Sportswear"
+  }
+]

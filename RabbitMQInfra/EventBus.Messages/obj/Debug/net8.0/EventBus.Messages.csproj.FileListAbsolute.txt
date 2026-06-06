@@ -1,0 +1,11 @@
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/bin/Debug/net8.0/EventBus.Messages.deps.json
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/bin/Debug/net8.0/EventBus.Messages.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/bin/Debug/net8.0/EventBus.Messages.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.AssemblyInfoInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.AssemblyInfo.cs
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.csproj.CoreCompileInputs.cache
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/refint/EventBus.Messages.dll
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/EventBus.Messages.pdb
+/Users/sambit/Desktop/VsCodeApi/Ecommerce/RabbitMQInfra/EventBus.Messages/obj/Debug/net8.0/ref/EventBus.Messages.dll

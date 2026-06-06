@@ -1,0 +1,16 @@
+# Ignore Angular client project (already deleted, but just in case)
+CLIENT/
+
+# Build results
+bin/
+obj/
+publish/
+
+# User-specific files
+*.log
+*.user
+*.suo
+*.vs/
+
+# Dependency files
+deps.txt

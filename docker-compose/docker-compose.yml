@@ -1,0 +1,193 @@
+# Docker Compose file for E-commerce Microservices
+
+version: '3.8'
+
+services:
+  # MongoDB for Catalog
+  catalogdb:
+    image: mongo:latest
+    container_name: catalogdb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  # Redis for Basket
+  basketcache:
+    image: redis:latest
+    container_name: basketcache
+    restart: always
+    ports:
+      - "6379:6379"
+
+  # PostgreSQL for Discount
+  discountdb:
+    image: postgres:latest
+    container_name: discountdb
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Sambit@123
+      POSTGRES_DB: DiscountDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # SQL Server for Order
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: orderdb
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Sambit@123"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - orderdb_data:/var/opt/mssql
+
+  # pgAdmin for PostgreSQL
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sambitsahoo87@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Sambit@123
+    restart: always
+    ports:
+      - "8005:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
+
+  # RabbitMQ for EventBus
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: Sambit
+      RABBITMQ_DEFAULT_PASS: Sambit123
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  # Elasticsearch for logging
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.10
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearchdata:/usr/share/elasticsearch/data
+    restart: always
+
+  # Kibana for log visualization
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.17.10
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - SERVER_NAME=kibana
+      - XPACK_REPORTING_ENABLED=true
+      - XPACK_ALERTING_ENABLED=true
+      # - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=some_long_random_string
+      - XPACK_SECURITY_ENABLED=false
+      - NODE_OPTIONS= # 👈 disables legacy OpenSSL provider
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    restart: always
+
+  # Catalog API
+  catalog.api:
+    build:
+      context: ../
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    container_name: catalog.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+      DatabaseSettings__ConnectionString: mongodb://catalogdb:27017
+      DatabaseSettings__DatabaseName: CatalogDb
+      DatabaseSettings__CollectionName: Products
+      DatabaseSettings__BrandsCollection: Brands
+      DatabaseSettings__TypesCollection: Types
+      ElasticConfiguration__Uri: http://elasticsearch:9200
+    depends_on:
+      - catalogdb
+      - elasticsearch
+    ports:
+      - "8000:80"
+
+  # Basket API
+  basket.api:
+    build:
+      context: ../
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+    container_name: basket.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:81
+      CacheSettings__ConnectionString: basketcache:6379
+      GrpcSettings__DiscountUrl: http://discount.api:82
+      EventBusSettings__HostAddress: amqp://Sambit:Sambit123@rabbitmq:5672
+      ElasticConfiguration__Uri: http://elasticsearch:9200
+    depends_on:
+      - basketcache
+      - rabbitmq
+      - elasticsearch
+    ports:
+      - "8001:81"
+
+  # Discount API
+  discount.api:
+    build:
+      context: ../
+      dockerfile: Services/Discount/Discount.API/Dockerfile
+    container_name: discount.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:82
+      DatabaseSettings__ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;Username=postgres;Password=Sambit@123
+      ElasticConfiguration__Uri: http://elasticsearch:9200
+    depends_on:
+      - discountdb
+      - elasticsearch
+    ports:
+      - "8002:82"
+
+  # Order API
+  order.api:
+    build:
+      context: ../
+      dockerfile: Services/Order/Order.API/Dockerfile
+    container_name: order.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:83
+      ConnectionStrings__OrderConnectionString: Server=orderdb;Database=OrderDb;User Id=sa;Password=Sambit@123;TrustServerCertificate=True
+      EventBusSettings__HostAddress: amqp://Sambit:Sambit123@rabbitmq:5672
+      ElasticConfiguration__Uri: http://elasticsearch:9200
+    depends_on:
+      - orderdb
+      - rabbitmq
+      - elasticsearch
+    ports:
+      - "8004:83"
+
+volumes:
+  mongo_data:
+  pgdata:
+  pgadmin_data:
+  orderdb_data:
+  elasticsearchdata:
+
+

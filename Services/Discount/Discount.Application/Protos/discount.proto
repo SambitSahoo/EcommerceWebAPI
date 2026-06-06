@@ -1,0 +1,48 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";   // Required for Timestamp
+
+option csharp_namespace = "Discount.Grpc.Protos";
+
+package discount;
+
+// The Discount service definition.
+service DiscountProtoService {
+    rpc GetDiscount (GetDiscountRequest) returns (CouponModel);
+    rpc CreateDiscount (CreateDiscountRequest) returns (CouponModel);
+    rpc UpdateDiscount (UpdateDiscountRequest) returns (CouponModel);
+    rpc DeleteDiscount (DeleteDiscountRequest) returns (DeleteDiscountResponse);
+}
+
+// Request message for getting a discount
+message GetDiscountRequest {
+    string productName = 1;
+}
+
+message CouponModel {
+    int32 id = 1;
+    string productName = 2;
+    string description =3;
+    int32 amount =4;
+    google.protobuf.Timestamp expiryDate = 5;
+    bool is_Active =6;
+}
+
+// Request message for creating a discount
+message CreateDiscountRequest {
+    CouponModel coupon = 1;
+}
+
+// Request message for updating a discount
+message UpdateDiscountRequest {
+    CouponModel coupon = 1;
+}
+
+// Request message for deleting a discount
+message DeleteDiscountRequest {
+    string productName = 1;
+}
+
+// Response message for deleting a discount
+message DeleteDiscountResponse {
+    bool success = 1;
+}

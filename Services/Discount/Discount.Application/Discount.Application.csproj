@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+<ItemGroup>
+    <ProjectReference Include="..\Discount.Core\Discount.Core.csproj" />
+  </ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="AutoMapper" Version="13.0.1" />
+  <PackageReference Include="Google.Protobuf" Version="3.32.0" />
+  <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+  <PackageReference Include="Grpc.Tools" Version="2.71.0">
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    <PrivateAssets>all</PrivateAssets>
+  </PackageReference>
+  <PackageReference Include="MediatR" Version="12.5.0" />
+</ItemGroup>
+
+<ItemGroup>
+  <Protobuf Include="Protos/discount.proto" GrpcServices="Server" />
+</ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

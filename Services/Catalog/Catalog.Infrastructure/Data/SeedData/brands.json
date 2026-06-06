@@ -1,0 +1,38 @@
+[
+    {
+        "Id": "c1a9e4b2-9d8f-4d2e-88f5-92f84b21a7f3",
+        "Name": "Adidas"
+    },
+    {
+        "Id": "f7b3d2a1-6e9c-4b11-94a3-412a5f57b82d",
+        "Name": "Nike"
+    },
+    {
+        "Id": "d9f842c3-45a7-41ea-82d3-94b5a6c914c6",
+        "Name": "Puma"
+    },
+    {
+        "Id": "a4b8930d-2789-4f38-9ff0-2b52e49e8242",
+        "Name": "Reebok"
+    },
+    {
+        "Id": "e3c1f5b7-3c4e-4f8a-9d2e-1b6f7a8c9d0e",
+        "Name": "Victor"
+    },
+    {
+        "Id": "b2a1c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "Name": "Yonex"
+    },
+    {
+        "Id": "f1e2d3c4-b5a6-7d8e-9f0a-1b2c3d4e5f6g",
+        "Name": "Li-Ning"
+    },
+    {
+        "Id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+        "Name": "Asics"
+    },
+    {
+        "Id": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+        "Name": "Babolat"
+    }
+]

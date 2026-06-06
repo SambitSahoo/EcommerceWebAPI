@@ -1,0 +1,164 @@
+Project 'Catalog.API' has the following package references
+   [net8.0]: 
+   Top-level Package                                            Requested   Resolved
+   > Asp.Versioning.Mvc                                         8.1.0       8.1.0   
+   > Microsoft.AspNetCore.OpenApi                               8.0.17      8.0.17  
+   > Microsoft.VisualStudio.Azure.Containers.Tools.Targets      1.22.1      1.22.1  
+   > Swashbuckle.AspNetCore                                     6.6.2       6.6.2   
+
+   Transitive Package                                                Resolved
+   > Asp.Versioning.Abstractions                                     8.1.0   
+   > Asp.Versioning.Http                                             8.1.0   
+   > AspNetCore.HealthChecks.MongoDb                                 8.0.1   
+   > AutoMapper                                                      14.0.0  
+   > DnsClient                                                       1.6.1   
+   > MediatR                                                         13.0.0  
+   > MediatR.Contracts                                               2.0.1   
+   > Microsoft.Extensions.ApiDescription.Server                      6.0.5   
+   > Microsoft.Extensions.Configuration.Abstractions                 8.0.0   
+   > Microsoft.Extensions.Configuration.Binder                       8.0.2   
+   > Microsoft.Extensions.DependencyInjection                        8.0.0   
+   > Microsoft.Extensions.DependencyInjection.Abstractions           8.0.0   
+   > Microsoft.Extensions.Diagnostics.Abstractions                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions      8.0.0   
+   > Microsoft.Extensions.FileProviders.Abstractions                 8.0.0   
+   > Microsoft.Extensions.Hosting.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Logging                                    8.0.0   
+   > Microsoft.Extensions.Logging.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Options                                    8.0.0   
+   > Microsoft.Extensions.Primitives                                 8.0.0   
+   > Microsoft.IdentityModel.Abstractions                            8.0.1   
+   > Microsoft.IdentityModel.JsonWebTokens                           8.0.1   
+   > Microsoft.IdentityModel.Logging                                 8.0.1   
+   > Microsoft.IdentityModel.Tokens                                  8.0.1   
+   > Microsoft.NETCore.Platforms                                     5.0.0   
+   > Microsoft.OpenApi                                               1.6.14  
+   > Microsoft.Win32.Registry                                        5.0.0   
+   > MongoDB.Bson                                                    3.4.3   
+   > MongoDB.Driver                                                  3.4.3   
+   > SharpCompress                                                   0.30.1  
+   > Snappier                                                        1.0.0   
+   > Swashbuckle.AspNetCore.Swagger                                  6.6.2   
+   > Swashbuckle.AspNetCore.SwaggerGen                               6.6.2   
+   > Swashbuckle.AspNetCore.SwaggerUI                                6.6.2   
+   > System.Buffers                                                  4.5.1   
+   > System.Diagnostics.DiagnosticSource                             8.0.0   
+   > System.Memory                                                   4.5.5   
+   > System.Runtime.CompilerServices.Unsafe                          5.0.0   
+   > System.Security.AccessControl                                   5.0.0   
+   > System.Security.Principal.Windows                               5.0.0   
+   > ZstdSharp.Port                                                  0.7.3   
+
+Project 'Catalog.Application' has the following package references
+   [net8.0]: 
+   Top-level Package      Requested   Resolved
+   > AutoMapper           14.0.0      14.0.0  
+   > MediatR              13.0.0      13.0.0  
+
+   Transitive Package                                                Resolved
+   > AspNetCore.HealthChecks.MongoDb                                 8.0.1   
+   > DnsClient                                                       1.6.1   
+   > MediatR.Contracts                                               2.0.1   
+   > Microsoft.Extensions.Configuration.Abstractions                 8.0.0   
+   > Microsoft.Extensions.DependencyInjection                        8.0.0   
+   > Microsoft.Extensions.DependencyInjection.Abstractions           8.0.0   
+   > Microsoft.Extensions.Diagnostics.Abstractions                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions      8.0.0   
+   > Microsoft.Extensions.FileProviders.Abstractions                 8.0.0   
+   > Microsoft.Extensions.Hosting.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Logging                                    8.0.0   
+   > Microsoft.Extensions.Logging.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Options                                    8.0.0   
+   > Microsoft.Extensions.Primitives                                 8.0.0   
+   > Microsoft.IdentityModel.Abstractions                            8.0.1   
+   > Microsoft.IdentityModel.JsonWebTokens                           8.0.1   
+   > Microsoft.IdentityModel.Logging                                 8.0.1   
+   > Microsoft.IdentityModel.Tokens                                  8.0.1   
+   > Microsoft.NETCore.Platforms                                     5.0.0   
+   > Microsoft.Win32.Registry                                        5.0.0   
+   > MongoDB.Bson                                                    3.4.3   
+   > MongoDB.Driver                                                  3.4.3   
+   > SharpCompress                                                   0.30.1  
+   > Snappier                                                        1.0.0   
+   > System.Buffers                                                  4.5.1   
+   > System.Diagnostics.DiagnosticSource                             8.0.0   
+   > System.Memory                                                   4.5.5   
+   > System.Runtime.CompilerServices.Unsafe                          5.0.0   
+   > System.Security.AccessControl                                   5.0.0   
+   > System.Security.Principal.Windows                               5.0.0   
+   > ZstdSharp.Port                                                  0.7.3   
+
+Project 'Catalog.Core' has the following package references
+   [net8.0]: 
+   Top-level Package                      Requested   Resolved
+   > AspNetCore.HealthChecks.MongoDb      8.0.1       8.0.1   
+   > MongoDB.Driver                       3.4.3       3.4.3   
+
+   Transitive Package                                                Resolved
+   > DnsClient                                                       1.6.1   
+   > Microsoft.Extensions.Configuration.Abstractions                 8.0.0   
+   > Microsoft.Extensions.DependencyInjection.Abstractions           8.0.0   
+   > Microsoft.Extensions.Diagnostics.Abstractions                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions      8.0.0   
+   > Microsoft.Extensions.FileProviders.Abstractions                 8.0.0   
+   > Microsoft.Extensions.Hosting.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Logging.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Options                                    8.0.0   
+   > Microsoft.Extensions.Primitives                                 8.0.0   
+   > Microsoft.NETCore.Platforms                                     5.0.0   
+   > Microsoft.Win32.Registry                                        5.0.0   
+   > MongoDB.Bson                                                    3.4.3   
+   > SharpCompress                                                   0.30.1  
+   > Snappier                                                        1.0.0   
+   > System.Buffers                                                  4.5.1   
+   > System.Diagnostics.DiagnosticSource                             8.0.0   
+   > System.Memory                                                   4.5.5   
+   > System.Runtime.CompilerServices.Unsafe                          5.0.0   
+   > System.Security.AccessControl                                   5.0.0   
+   > System.Security.Principal.Windows                               5.0.0   
+   > ZstdSharp.Port                                                  0.7.3   
+
+Project 'Catalog.Infrastructure' has the following package references
+   [net8.0]: 
+   Top-level Package                                Requested   Resolved
+   > Microsoft.Extensions.Configuration.Binder      8.0.2       8.0.2   
+
+   Transitive Package                                                Resolved
+   > AspNetCore.HealthChecks.MongoDb                                 8.0.1   
+   > AutoMapper                                                      14.0.0  
+   > DnsClient                                                       1.6.1   
+   > MediatR                                                         13.0.0  
+   > MediatR.Contracts                                               2.0.1   
+   > Microsoft.Extensions.Configuration.Abstractions                 8.0.0   
+   > Microsoft.Extensions.DependencyInjection                        8.0.0   
+   > Microsoft.Extensions.DependencyInjection.Abstractions           8.0.0   
+   > Microsoft.Extensions.Diagnostics.Abstractions                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks                   8.0.0   
+   > Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions      8.0.0   
+   > Microsoft.Extensions.FileProviders.Abstractions                 8.0.0   
+   > Microsoft.Extensions.Hosting.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Logging                                    8.0.0   
+   > Microsoft.Extensions.Logging.Abstractions                       8.0.0   
+   > Microsoft.Extensions.Options                                    8.0.0   
+   > Microsoft.Extensions.Primitives                                 8.0.0   
+   > Microsoft.IdentityModel.Abstractions                            8.0.1   
+   > Microsoft.IdentityModel.JsonWebTokens                           8.0.1   
+   > Microsoft.IdentityModel.Logging                                 8.0.1   
+   > Microsoft.IdentityModel.Tokens                                  8.0.1   
+   > Microsoft.NETCore.Platforms                                     5.0.0   
+   > Microsoft.Win32.Registry                                        5.0.0   
+   > MongoDB.Bson                                                    3.4.3   
+   > MongoDB.Driver                                                  3.4.3   
+   > SharpCompress                                                   0.30.1  
+   > Snappier                                                        1.0.0   
+   > System.Buffers                                                  4.5.1   
+   > System.Diagnostics.DiagnosticSource                             8.0.0   
+   > System.Memory                                                   4.5.5   
+   > System.Runtime.CompilerServices.Unsafe                          5.0.0   
+   > System.Security.AccessControl                                   5.0.0   
+   > System.Security.Principal.Windows                               5.0.0   
+   > ZstdSharp.Port                                                  0.7.3   
+

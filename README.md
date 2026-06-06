@@ -66,15 +66,19 @@ Microsoft.EntityFrameworkCore.SqlServer \
 
 How to Connect Sql Server in VS Code using docker image for OrderDb
 —————————------------------------------------------------------------
-Open VS Code->Click Sql Server -> Add Connection-> In the window 1.Profile name:- any name like Ecommerce
+1.Open VS Code->Click Sql Server -> Add Connection-> In the window 1.Profile name:- any name like Ecommerce
+
 2. Servername: localhost,1433
 3. Username: sa
 4. Password: Your Password
 5. Database name : type master
 6. Click OK
 7. Once connected create a new database named as OrderDb as per connection string name.
-8. Then create a new table I.e PurchaseOrders here as per Table name  NOTE: when you run docker-compose down, it removes all containers, networks, and volumes defined in your docker-compose.yml. That includes the volume where your SQL Server data (OrderDb) lives — unless you've explicitly named and persisted it.  How to stop containers without deleting data —— Instead of using docker-compose down ,Use docker-compose stop
-* To start everything again: docker-compose start
+8. Then create a new table I.e PurchaseOrders here as per Table name  NOTE: when you run docker-compose down, it removes all containers, networks, and volumes defined in your docker-compose.yml.
+9. That includes the volume where your SQL Server data (OrderDb) lives — unless you've explicitly named and persisted it.
+10.  How to stop containers without deleting data —— Instead of using docker-compose down ,Use docker-compose stop
+11. To start everything again: docker-compose start
+
 
 If any changes you done in docker-compose.yml file then 
 docker-compose up --build
@@ -133,3 +137,12 @@ Then click Discover
 If nothing will show, then top right corner change from last One hour to last 1 week or something like that
  Then logs will show. in the Filter your data using Kql search box put the below Kql query
  fields.ApplicationName: "Basket.API"
+
+ --------------------
+ Quick Endpoint Map (based on your setup)
+ 
+API Service	   Host URL	                      Swagger UI	    Likely Base Route
+Catalog API	   http://localhost:8000	        /swagger	      /api/catalog
+Basket API	   http://localhost:8001	        /swagger	      /api/basket
+Discount API	 http://localhost:8002	        /swagger	      /api/discount
+Order API	     http://localhost:8004	        /swagger	      /api/order

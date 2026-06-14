@@ -4,7 +4,8 @@ using Catalog.Core.Repositories;
 using Catalog.Infrastructure.Data;
 using Catalog.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Asp.Versioning;
+using Asp.Versioning.ApiExplorer;
 using System.Text.Json.Serialization;
 using Serilog;
 using Common.Logging;
@@ -45,10 +46,8 @@ namespace Catalog.API
                 options.DefaultApiVersion = new ApiVersion(1, 0);
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ReportApiVersions = true;
-            });
-
-            // ✅ Versioned API Explorer for Swagger
-            builder.Services.AddVersionedApiExplorer(options =>
+            })
+            .AddApiExplorer(options =>
             {
                 options.GroupNameFormat = "'v'VVV";
                 options.SubstituteApiVersionInUrl = true;
@@ -88,8 +87,8 @@ namespace Catalog.API
             var app = builder.Build();
 
             // ✅ Swagger UI with versioning
-            if (app.Environment.IsDevelopment())
-            {
+            // if (app.Environment.IsDevelopment())
+            // {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
 
@@ -102,9 +101,10 @@ namespace Catalog.API
                                                 $"Catalog.API {description.ApiVersion}");
                     }
                 });
-            }
+            //}
 
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
             app.MapControllers();
 

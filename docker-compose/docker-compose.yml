@@ -28,7 +28,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Sambit@123
+      POSTGRES_PASSWORD: Your Password
       POSTGRES_DB: DiscountDb
     ports:
       - "5432:5432"
@@ -42,7 +42,7 @@ services:
     restart: always
     environment:
       ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "Sambit@123"
+      MSSQL_SA_PASSWORD: "Your Password"
       MSSQL_PID: "Express"
     ports:
       - "1433:1433"
@@ -54,8 +54,8 @@ services:
     container_name: pgadmin
     image: dpage/pgadmin4:latest
     environment:
-      PGADMIN_DEFAULT_EMAIL: sambitsahoo87@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: Sambit@123
+      PGADMIN_DEFAULT_EMAIL: Your Email
+      PGADMIN_DEFAULT_PASSWORD: Your Password
     restart: always
     ports:
       - "8005:80"
@@ -68,8 +68,8 @@ services:
     container_name: rabbitmq
     restart: always
     environment:
-      RABBITMQ_DEFAULT_USER: Sambit
-      RABBITMQ_DEFAULT_PASS: Sambit123
+      RABBITMQ_DEFAULT_USER: Your Username
+      RABBITMQ_DEFAULT_PASS: Your Password
     ports:
       - "5672:5672"
       - "15672:15672"
@@ -138,7 +138,7 @@ services:
       ASPNETCORE_URLS: http://+:81
       CacheSettings__ConnectionString: basketcache:6379
       GrpcSettings__DiscountUrl: http://discount.api:82
-      EventBusSettings__HostAddress: amqp://Sambit:Sambit123@rabbitmq:5672
+      EventBusSettings__HostAddress: amqp://Sambit:Sambit@rabbitmq:5672
       ElasticConfiguration__Uri: http://elasticsearch:9200
     depends_on:
       - basketcache
@@ -156,7 +156,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:82
-      DatabaseSettings__ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;Username=postgres;Password=Sambit@123
+      DatabaseSettings__ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;Username=postgres;Password=Your Password
       ElasticConfiguration__Uri: http://elasticsearch:9200
     depends_on:
       - discountdb
@@ -173,7 +173,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:83
-      ConnectionStrings__OrderConnectionString: Server=orderdb;Database=OrderDb;User Id=sa;Password=Sambit@123;TrustServerCertificate=True
+      ConnectionStrings__OrderConnectionString: Server=orderdb;Database=OrderDb;User Id=Your UserId;Password=Your Password;TrustServerCertificate=True
       EventBusSettings__HostAddress: amqp://Sambit:Sambit123@rabbitmq:5672
       ElasticConfiguration__Uri: http://elasticsearch:9200
     depends_on:

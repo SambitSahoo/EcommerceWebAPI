@@ -13,7 +13,7 @@ namespace Catalog.API.Controllers
     /// Provides endpoints for CRUD operations and queries.
     /// </summary>
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.ApiVersion("1.0")]
+    [Asp.Versioning.ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class CatalogController : ControllerBase
     {

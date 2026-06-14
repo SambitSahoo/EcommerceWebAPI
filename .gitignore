@@ -14,6 +14,7 @@ publish/
 
 # OS files
 .DS_Store
+Thumbs.db
 
 # Docker
 docker-compose/*.dockerignore
@@ -25,3 +26,23 @@ node_modules/
 # Backup & temp files
 *.bak
 *.tmp
+
+# NuGet auto-generated files
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+*.nuget.cache
+*.dgspec.json
+
+# Test results
+TestResult.xml
+*.coverage
+*.coveragexml
+
+# Compiled binaries
+*.dll
+*.pdb
+*.exe
